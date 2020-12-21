@@ -23,6 +23,7 @@ class Movie(Base):
     Genre = relationship("Tag", backref="movies")
     name = Column(String)
     director = Column(String)
+    second_Genre = Column(String)
     IMDb_score = Column(Float)
     MC_score = Column(Float)
     year = Column(Float)
